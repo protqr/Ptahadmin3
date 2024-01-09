@@ -1,12 +1,24 @@
 import React from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { HomeLayout, Register, Login, DashboardLayout, Landing, Error } from "./pages";
+import {
+  HomeLayout,
+  Register,
+  Login,
+  DashboardLayout,
+  Landing,
+  Error,
+  AddPosture,
+  Stats,
+  AllPosture,
+  Profile,
+  Admin,
+} from "./pages";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomeLayout />,
-    errorElement:<Error />,
+    errorElement: <Error />,
     children: [
       {
         index: true,
@@ -23,6 +35,28 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <DashboardLayout />,
+        children: [
+          {
+            index: true,
+            element: <AddPosture />,
+          },
+          {
+            path: "stats",
+            element: <Stats />,
+          },
+          {
+            path: "all-posture",
+            element: <AllPosture />,
+          },
+          {
+            path: "profile",
+            element: <Profile />,
+          },
+          {
+            path: "admin",
+            element: <Admin />,
+          },
+        ],
       },
     ],
   },
