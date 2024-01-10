@@ -16,7 +16,6 @@ const Landing = () => {
           <h1>
             <span>PTAH</span> Application
           </h1>
-          <p>เดี๋ยวเฮียจัดให้นะจ๊ะ</p>
           <Link to="/register" className="btn register-link">
             Register
           </Link>
