@@ -30,6 +30,7 @@ const Wrapper = styled.aside`
       padding-top: 2rem;
       display: flex;
       flex-direction: column;
+      padding-bottom: 2rem;
     }
     .nav-link {
       display: flex;
@@ -37,6 +38,8 @@ const Wrapper = styled.aside`
       color: var(--text-secondary-color);
       padding: 1rem 0;
       padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      padding-bottom: 1.5rem;
       text-transform: capitalize;
       transition: padding-left 0.3s ease-in-out;
     }
