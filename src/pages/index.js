@@ -10,3 +10,4 @@ export { default as AddPosture } from "./AddPosture";
 export { default as EditPosture } from "./EditPosture";
 export { default as Profile } from "./Profile";
 export { default as Admin } from "./Admin";
+export { default as BlogManage } from "./BlogManage";

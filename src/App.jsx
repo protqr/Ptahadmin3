@@ -12,6 +12,7 @@ import {
   AllPosture,
   Profile,
   Admin,
+  BlogManage,
 } from "./pages";
 
 const router = createBrowserRouter([
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
           {
             path: "admin",
             element: <Admin />,
+          },
+          {
+            path: "blogmanage",
+            element: <BlogManage />,
           },
         ],
       },
