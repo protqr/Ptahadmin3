@@ -13,7 +13,16 @@ import {
   Profile,
   Admin,
   BlogManage,
+  AddUser,
 } from "./pages";
+
+export const checkDefaultTheme = () => {
+  const isDarkTheme = localStorage.getItem("darkTheme") === "true";
+  document.body.classList.toggle("dark-theme", isDarkTheme);
+  return isDarkTheme;
+};
+
+checkDefaultTheme();
 
 const router = createBrowserRouter([
   {
@@ -38,11 +47,12 @@ const router = createBrowserRouter([
         element: <DashboardLayout />,
         children: [
           {
-            index: true,
+            path: "add-posture",
             element: <AddPosture />,
           },
           {
-            path: "stats",
+            index: true,
+            // path: "stats",
             element: <Stats />,
           },
           {
@@ -60,6 +70,10 @@ const router = createBrowserRouter([
           {
             path: "blogmanage",
             element: <BlogManage />,
+          },
+          {
+            path: "add-user",
+            element: <AddUser />,
           },
         ],
       },

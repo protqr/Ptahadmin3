@@ -31,11 +31,12 @@ const Wrapper = styled.aside`
       display: flex;
       flex-direction: column;
       padding-bottom: 2rem;
+      background-color: #87cefa;
     }
     .nav-link {
       display: flex;
       align-items: center;
-      color: var(--text-secondary-color);
+      color: white;
       padding: 1rem 0;
       padding-left: 2.5rem;
       padding-right: 2.5rem;
@@ -45,8 +46,9 @@ const Wrapper = styled.aside`
     }
     .nav-link:hover {
       padding-left: 3rem;
-      color: var(--primary-500);
+      color: #1878b4;
       transition: var(--transition);
+      /* border-bottom: 2px solid white; */
     }
     .icon {
       font-size: 1.5rem;
@@ -55,7 +57,7 @@ const Wrapper = styled.aside`
       place-items: center;
     }
     .active {
-      color: var(--primary-500);
+      color: #1878b4;
     }
     .pending {
       background: var(--background-color);

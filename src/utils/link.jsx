@@ -12,12 +12,12 @@ import { IoMdPodium } from "react-icons/io";
 const links = [
   {
     text: "หน้าแรก",
-    path: "stats",
+    path: ".",
     icon: <IoBarChartSharp />,
   },
   {
     text: "จัดการท่ากายภาพบำบัด",
-    path: ".",
+    path: "add-posture",
     icon: <FaWpforms />,
   },
   {
@@ -32,7 +32,7 @@ const links = [
   },
   {
     text: "จัดการการทำกายภาพบำบัด",
-    path: "",
+    path: "add-user",
     icon: <IoBarChartSharp />,
   },
   {

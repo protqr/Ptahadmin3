@@ -7,6 +7,7 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     gap: 0 0.5rem;
+    background-color: #4cb3f4;
   }
   .img {
     width: 25px;
@@ -23,6 +24,7 @@ const Wrapper = styled.div`
     visibility: hidden;
     border-radius: var(--border-radius);
     background: var(--primary-500);
+    background-color: #4cb3f4;
   }
   .show-dropdown {
     visibility: visible;
@@ -38,6 +40,12 @@ const Wrapper = styled.div`
     cursor: pointer;
     width: 100%;
     height: 100%;
+  }
+  .dropdown-btn:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid #4cb3f4;
+    box-shadow: var(--shadow-2);
   }
 `;
 
