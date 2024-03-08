@@ -9,8 +9,9 @@ export { default as AllPosture } from "./AllPosture";
 export { default as AddPosture } from "./AddPosture";
 export { default as EditPosture } from "./EditPosture";
 export { default as AddUser } from "./AddUser";
-export { default as EditUser } from "./EditUser";
+export { default as EditPatient } from "./EditPatient";
 export { default as Profile } from "./Profile";
 export { default as Admin } from "./Admin";
 export { default as BlogManage } from "./BlogManage";
-
+export { default as AllPatient } from "./AllPatient";
+export { default as DeletePatient } from "./DeletePatient";

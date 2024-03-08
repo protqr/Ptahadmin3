@@ -9,12 +9,12 @@ const Landing = () => {
   return (
     <Wrapper>
       <nav>
-        <img src="{logo}" alt="PTAH" className="logo" />
+        {/* <img src="{logo}" alt="PTAH" className="logo" /> */}
       </nav>
       <div className="container page">
         <div className="info">
           <h1>
-            <span>PTAH</span> Application
+            <span>PTAH</span> Admin
           </h1>
           <Link to="/register" className="btn register-link">
             Register
@@ -24,7 +24,7 @@ const Landing = () => {
             Login
           </Link>
         </div>
-        <img src="{main}" alt="PtahApp" className="img main-img" />
+        {/* <img src="{main}" alt="PtahApp" className="img main-img" /> */}
       </div>
     </Wrapper>
   );

@@ -51,16 +51,35 @@ const Wrapper = styled.article`
       grid-template-columns: 1fr 1fr;
     }
   }
-  .status {
+
+  .status-กำลังรักษาอยู่ {
+    background-color: #ffcccb; /* สีแดงอ่อน */
     border-radius: var(--border-radius);
     text-transform: capitalize;
     letter-spacing: var(--letter-spacing);
     text-align: center;
-    width: 100px;
+    width: 130px;
     height: 30px;
+    margin-left: 70px;
     display: grid;
     align-items: center;
+    color: #842029;
   }
+
+  .status-จบการรักษา {
+    background-color: #90ee90; /* สีเขียวอ่อน */
+    border-radius: var(--border-radius);
+    text-transform: capitalize;
+    letter-spacing: var(--letter-spacing);
+    text-align: center;
+    width: 130px;
+    height: 30px;
+    margin-left: 70px;
+    display: grid;
+    align-items: center;
+    color: #0f5132;
+  }
+
   .actions {
     margin-top: 1rem;
     display: flex;

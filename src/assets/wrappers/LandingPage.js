@@ -18,7 +18,7 @@ const Wrapper = styled.section`
   h1 {
     font-weight: 700;
     span {
-      color: var(--primary-500);
+      color: rgb(100, 196, 255);
     }
     margin-bottom: 1.5rem;
   }
@@ -36,6 +36,11 @@ const Wrapper = styled.section`
   }
   .btn {
     padding: 0.75rem 1rem;
+    background-color: rgb(100, 196, 255);
+  }
+  .btn:hover {
+    background-color: rgb(149, 214, 255);
+    color: aliceblue;
   }
   @media (min-width: 992px) {
     .page {

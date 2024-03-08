@@ -1,13 +1,14 @@
 import React from "react";
 
 import { IoBarChartSharp } from "react-icons/io5";
-import { MdQueryStats } from "react-icons/md";
-import { FaWpforms } from "react-icons/fa";
 import { ImProfile } from "react-icons/im";
 import { MdAdminPanelSettings } from "react-icons/md";
 import { MdComment } from "react-icons/md";
 import { CiLogout } from "react-icons/ci";
-import { IoMdPodium } from "react-icons/io";
+import { IoMdPersonAdd } from "react-icons/io";
+import { FaWalking } from "react-icons/fa";
+import { AiFillDatabase } from "react-icons/ai";
+import { IoPeopleSharp } from "react-icons/io5";
 
 const links = [
   {
@@ -16,14 +17,14 @@ const links = [
     icon: <IoBarChartSharp />,
   },
   {
-    text: "จัดการท่ากายภาพบำบัด",
+    text: "เพิ่มท่ากายภาพ",
     path: "add-posture",
-    icon: <FaWpforms />,
+    icon: <FaWalking />,
   },
   {
-    text: "all posture",
+    text: "ท่ากายภาพทั้งหมด",
     path: "all-posture",
-    icon: <MdQueryStats />,
+    icon: <AiFillDatabase />,
   },
   {
     text: "จัดการกระทู้",
@@ -31,14 +32,14 @@ const links = [
     icon: <MdComment />,
   },
   {
-    text: "จัดการการทำกายภาพบำบัด",
+    text: "เพิ่มข้อมูลคนไข้",
     path: "add-user",
-    icon: <IoBarChartSharp />,
+    icon: <IoMdPersonAdd />,
   },
   {
-    text: "ดูคะแนนท่ากายภาพบำบัด",
-    path: "",
-    icon: <IoMdPodium />,
+    text: "จัดการข้อมูลคนไข้",
+    path: "all-patient",
+    icon: <IoPeopleSharp />,
   },
   {
     text: "โปรไฟล์",
@@ -46,7 +47,7 @@ const links = [
     icon: <ImProfile />,
   },
   {
-    text: "admin",
+    text: "แอดมิน",
     path: "admin",
     icon: <MdAdminPanelSettings />,
   },
